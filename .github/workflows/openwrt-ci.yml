@@ -115,6 +115,7 @@ jobs:
           CONFIG_PACKAGE_curl=y
           CONFIG_PACKAGE_nano=y
           CONFIG_PACKAGE_interrupts=y
+          CONFIG_PACKAGE_grub2-efi=y
           EOF
           cat >> .config <<EOF
           CONFIG_PACKAGE_amd64-microcode=y
