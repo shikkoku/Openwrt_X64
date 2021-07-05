@@ -106,8 +106,8 @@ jobs:
           CONFIG_PACKAGE_pciutils=y
           CONFIG_PACKAGE_usbutils=y
           CONFIG_PACKAGE_lm-sensors-detect=y
-          CONFIG_PACKAGE_luci-app-docker=y
-          CONFIG_PACKAGE_luci-lib-docker=y
+          # CONFIG_PACKAGE_luci-app-docker is not set
+          # CONFIG_PACKAGE_luci-lib-docker is not set
           CONFIG_PACKAGE_luci-app-diskman=y
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
@@ -120,6 +120,7 @@ jobs:
           cat >> .config <<EOF
           CONFIG_PACKAGE_intel-microcode=y
           CONFIG_PACKAGE_kmod-hwmon-it87=y
+          CONFIG_PACKAGE_kmod-igb=y
           CONFIG_PACKAGE_iucode-tool=y                 
           EOF
           cat >> .config <<EOF
